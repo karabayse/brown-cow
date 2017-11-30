@@ -32,6 +32,7 @@
 /**** HOME ****/
 
 .homeBackgroundDiv {
+  margin-top: -2em;
   min-height: 1000px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
@@ -42,11 +43,15 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Space Mono", monospace;
-  color: red;
 }
 
-h1 {
+.home {
+  font-family: "Space Mono", monospace;
+  color: red;
+  text-align: right;
+  margin-right: 25px;
+}
 
-
+.howNow {
+  font-size: 150px;
 }
