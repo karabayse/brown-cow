@@ -32,15 +32,21 @@
 /**** HOME ****/
 
 .homeBackgroundDiv {
-  min-height: 853px;
+  min-height: 1000px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-  url("../styles/images/Cow.jpeg") no-repeat center center fixed;
+  url("../styles/images/cow.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: "Space Mono", monospace;
+  color: red;
+}
+
+h1 {
+
+
 }

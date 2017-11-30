@@ -5,8 +5,8 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     templateUrl: 'views/home.html',
-    controller: 'CowController',
-    controllerAs: 'CowController as cc'
+    controller: 'HomeController',
+    controllerAs: 'HomeController as hc'
   // }).when('/history', {
   //   templateUrl: 'views/history.html',
   //   controller: 'HistoryController',
