@@ -12,9 +12,9 @@ router.get('/*', function(req, res) {
   res.sendFile(path.resolve('public/views/index.html'));
 }); // end router.get for index.html
 
-// router.get('/rooms', function(req, res) {
-//   console.log('rooms url hit');
-//   res.sendFile(path.resolve('views/rooms.html'));
-// }); // end router.get for rooms.html
+router.get('/learn', function(req, res) {
+  console.log('learn url hit');
+  res.sendFile(path.resolve('views/learn.html'));
+}); // end router.get for rooms.html
 
 module.exports = router;
