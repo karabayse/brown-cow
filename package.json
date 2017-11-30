@@ -12,5 +12,11 @@
     "url": "brown-cow"
   },
   "author": "Kara Bayse",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.10.8",
+    "nodemon": "^1.12.1"
+  }
 }
