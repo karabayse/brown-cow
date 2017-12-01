@@ -2,7 +2,48 @@
 
 <div class="learnBackgroundDiv">
 
-
 <h1>Let's Learn!</h1>
+
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li><a href="#">Exercises</a></li>
+        <li><a href="#">Dipthongs</a></li>
+        <li><a href="#">Monothongs</a></li>
+      </ul>
+
+    </div>
+
+    <!-- Page Content -> Right Side of Page -->
+    <div id="page-content-wrapper">
+      <!-- Container-fluid so that it takes up entire righthand side of page -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-leg-12">
+            <a href="#" class="btn-default" id="menu-toggle">Toggle Menu</a>
+            <h1>Sidebar Layouts are Cool</h1>
+            <p>I love apple pie.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<!-- **** END WRAPPER **** -->
+
+<!-- **** JQUERY **** -->
+<script type="text/javascript">
+$("#menu-toggle").click(function(e) {
+  // default action is to go to another page
+  // prevent default event below
+  e.preventDefault();
+  $("#wrapper").toggleClass("toggled");
+});
+</script>
+<!-- **** END JQUERY **** -->
 
 </div>
