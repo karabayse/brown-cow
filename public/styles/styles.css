@@ -109,6 +109,19 @@
 
 /***** LEARN *****/
 
-#siteName {
-  font-size: 25px;
+.navbarBrand {
+  font-size: 75px;
+}
+
+.navbar-default {
+  background-color: #C6E2FF;
+  color: White;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav li {
+  color: White;
 }
