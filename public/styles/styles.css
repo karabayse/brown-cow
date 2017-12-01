@@ -109,19 +109,29 @@
 
 /***** LEARN *****/
 
+.navbar-default {
+  background-color: #C6E2FF;
+  color: White;
+  border-radius: 0;
+}
+
 .navbarBrand {
   font-size: 75px;
 }
 
-.navbar-default {
-  background-color: #C6E2FF;
-  color: White;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.nav li {
-  color: White;
+.learnBackgroundDiv {
+  /*margin-top: -1.4em;
+  min-height: 1000px;*/
+  /*height: 100%;
+  padding-bottom: 100px;*/
+  /*background: linear-gradient(
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+  url("../styles/images/clouds.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.25;*/
 }
