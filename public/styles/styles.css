@@ -120,20 +120,19 @@
 }
 
 .learnBackgroundDiv {
-  /*margin-top: -1.4em;
+  margin-top: -1.4em;
   min-height: 1000px;*/
-  /*height: 100%;
-  padding-bottom: 100px;*/
-  /*background: linear-gradient(
+  height: 100%;
+  padding-bottom: 100px;
+  background: linear-gradient(
       rgba(0, 0, 0, 0.05),
       rgba(0, 0, 0, 0.05)
     ),
-  url("../styles/images/clouds.png") no-repeat center center fixed;
+  url("../styles/images/cow2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.25;*/
 }
 
 table.learnTable {
@@ -143,6 +142,7 @@ table.learnTable {
   overflow-y: scroll;
   position: static;
   width: 80%;
+  opacity: 0.90;
 }
 
 /*table thead th {*/
