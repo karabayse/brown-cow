@@ -15,10 +15,10 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/answers.html',
     controller: 'AnswersController',
     controllerAs: 'AnswersController as ac'
-  // }).when('/rooms', {
-  //   templateUrl: 'views/rooms.html',
-  //   controller: 'RoomsController',
-  //   controllerAs: 'RoomsController as roc'
+  }).when('/score', {
+    templateUrl: 'views/score.html',
+    controller: 'ScoreController',
+    controllerAs: 'ScoreController as sc'
   }).otherwise('/');
   $locationProvider.html5Mode(true);
 });
