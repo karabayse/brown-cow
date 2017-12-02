@@ -14,3 +14,20 @@
   </div>
 </nav>
 <!-- **** END NAVBAR **** -->
+
+<div ng-controller="ScoreController as sc">
+
+  <div class="box" id="pie">
+       <div class="container">
+         <h3 class="lead">SCORE RESULTS</h3>
+         <canvas id="pie" class="chart chart-pie" chart-data="sc.pieData"
+          chart-labels="sc.pieLabels" chart-options="sc.pieOptions"
+          ng-init="sc.getPieChart()"></canvas>
+       </div>
+     </div>
+
+
+
+
+</div>
+<!-- **** END CONTROLLER **** -->
