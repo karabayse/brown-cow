@@ -11,10 +11,10 @@ myApp.config(function($routeProvider, $locationProvider) {
     templateUrl: 'views/learn.html',
     controller: 'LearnController',
     controllerAs: 'LearnController as lc'
-  // }).when('/restaurant', {
-  //   templateUrl: 'views/restaurant.html',
-  //   controller: 'RestaurantController',
-  //   controllerAs: 'RestaurantController as rec'
+  }).when('/answers', {
+    templateUrl: 'views/answers.html',
+    controller: 'AnswersController',
+    controllerAs: 'AnswersController as ac'
   // }).when('/rooms', {
   //   templateUrl: 'views/rooms.html',
   //   controller: 'RoomsController',
