@@ -15,11 +15,15 @@
 </nav>
 <!-- **** END NAVBAR **** -->
 
-<div ng-controller="ScoreController as sc">
+<div ng-controller="ScoreController as sc" class="scoreBackgroundDiv">
+
+  <div class="container">
+
+
 
   <div class="box" id="pie">
        <div class="container">
-         <h3 class="lead">SCORE RESULTS</h3>
+         <h3 class="lead"><b>SCORE RESULTS</b></h3>
          <canvas id="pie" class="chart chart-pie" chart-data="sc.pieData"
           chart-labels="sc.pieLabels" chart-options="sc.pieOptions"
           ng-init="sc.getPieChart()"></canvas>
@@ -27,7 +31,9 @@
      </div>
 
 
-
+     </div>
+     <!-- **** END CONTAINER CLASS **** -->
 
 </div>
 <!-- **** END CONTROLLER **** -->
+<!-- **** END SCORE BACKGROUND DIV ****  -->
