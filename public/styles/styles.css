@@ -254,6 +254,15 @@ th, td {
   background-size: cover;
 }
 
+h3 {
+  color: White;
+}
+
 canvas {
   opacity: 0.95;
+}
+
+#pie {
+  max-height: 500px;
+  max-width: 500px;
 }
