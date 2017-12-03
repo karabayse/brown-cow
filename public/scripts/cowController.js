@@ -1,6 +1,6 @@
 /*---- COW CONTROLLER ----*/
 
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute'], ['chart.js']);
 
 myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
