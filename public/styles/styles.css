@@ -253,3 +253,7 @@ th, td {
   -o-background-size: cover;
   background-size: cover;
 }
+
+canvas {
+  opacity: 0.95;
+}
