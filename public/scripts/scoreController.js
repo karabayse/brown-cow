@@ -1,7 +1,4 @@
-/*---- COW CONTROLLER ----*/
-
-myApp.controller('ScoreController', ['ScoreService', '$http', '$location',
-  function(ScoreService, $http, $location) {
+myApp.controller('ScoreController', function(ScoreService, $http, $location) {
   var vm = this;
 
   // pie chart post function
@@ -19,4 +16,4 @@ myApp.controller('ScoreController', ['ScoreService', '$http', '$location',
   };
 };
 
-}]); // end controller
+}); // end controller
