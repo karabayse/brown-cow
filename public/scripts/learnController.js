@@ -20,7 +20,7 @@ myApp.controller('LearnController', function(LearnService) {
     }; // end yourAnswersEntryObject
     console.log('yourAnswersEntryObject', yourAnswersEntryObject);
     LearnService.yourAnswersEntry(yourAnswersEntryObject).then(function() {
-      sweetAlert("Your Answers Submitted!");
+      sweetAlert("Your Answers Were Submitted!");
       vm.firstEntry = '';
       vm.secondEntry = '';
       vm.thirdEntry = '';
