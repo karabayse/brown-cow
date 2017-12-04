@@ -1,4 +1,4 @@
-/*---- Laern Service ----*/
+/*---- Learn Service ----*/
 
 myApp.service('LearnService', function($http) {
   var sv = this;
