@@ -1,11 +1,12 @@
 /*---- Learn Controller ----*/
 
 myApp.controller('LearnController', function(LearnService) {
-  console.log('in LearnController;');
+  console.log('in LearnController');
   var vm = this;
 
   // your answers entry function
   vm.yourAnswersEntry = function() {
+    console.log('in yourAnswersEntry function');
     var yourAnswersEntryObject = {
       entry1: vm.firstEntry,
       entry2: vm.secondEntry,
@@ -29,7 +30,7 @@ myApp.controller('LearnController', function(LearnService) {
       vm.seventhEntry = '';
       vm.eighthEntry = '';
       vm.ninthEntry = '';
-    }); // end LearnService.yourAnswersEntry 
+    }); // end LearnService.yourAnswersEntry
   }; // end yourAnswersEntry function
 
 }); // end controller
