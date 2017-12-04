@@ -12,8 +12,11 @@ myApp.controller('ScoreController', function(ScoreService, $http, $location) {
     vm.options = {
     legend: {
       display: true
-    }
-  };
-};
+      } // end legend
+    }; // end vm.options
+    vm.colors = ["#FF82AB",
+            "rgba(224, 108, 112, 1)",
+            "rgba(224, 108, 112, 1)"];     
+  };  // end getPieChart
 
 }); // end controller

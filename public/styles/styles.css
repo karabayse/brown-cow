@@ -136,9 +136,14 @@
 }
 
 .learnButtons {
-  width: 100px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
+  display: inline;
+}
+
+.dipthongExercises {
+  z-index: 0;
 }
 
 table.learnTable {
@@ -146,7 +151,7 @@ table.learnTable {
   left: 10%;
   margin: 20px auto;
   overflow-y: scroll;
-  position: static;
+  /*position: static;*/
   width: 80%;
   opacity: 0.90;
 }
@@ -175,14 +180,10 @@ th, td {
   width: 33.3333%;
 }
 
-.btn btn-success {
-  position: absolute;
-  top: 50%;
-}
-
-.btn btn-info {
-  text-align: center;
-  display: inline-block:
+.yourAnswers {
+  z-index: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
