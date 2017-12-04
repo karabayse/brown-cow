@@ -135,6 +135,12 @@
   background-size: cover;
 }
 
+.learnButtons {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 table.learnTable {
   height: 40%;
   left: 10%;
