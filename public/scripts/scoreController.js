@@ -1,4 +1,4 @@
-myApp.controller('ScoreController', function(ScoreService, $http, $location) {
+myApp.controller('ScoreController', function(ScoreService, LearnService, $http, $location) {
   var vm = this;
 
   // pie chart post function
@@ -7,7 +7,7 @@ myApp.controller('ScoreController', function(ScoreService, $http, $location) {
     // pie piece lable
     vm.labels = ['Correct', 'Incorrect', 'Not Answered'];
     // dummy data
-    vm.data = [300, 500, 100];
+    // vm.data = [300, 500, 100];
     // legend
     vm.options = {
     legend: {
@@ -20,8 +20,23 @@ myApp.controller('ScoreController', function(ScoreService, $http, $location) {
   };  // end getPieChart
 
   // get score function
-  vm.getScore = function() {
+  vm.pieData = [];
 
+  vm.getScore = function() {
+    for (var i = 0; i < pieData.length; i++) {
+      if (pieData[0] === 'ou'
+      && pieData[1] === 'oy'
+      && pieData[2] === 'ow'
+      && pieData[3] === 'oi'
+      && pieData[4] === 'ou'
+      && pieData[5] === 'ou'
+      && pieData[6] === 'ow'
+      && pieData[7] === 'ow'
+      && pieData[8] === 'ai') {
+      vm.label === 'Correct';
+    } else (vm.label === 'Incorrect');
+
+    } // end for loop
 
     // Use getElementById ?
 
