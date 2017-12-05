@@ -3,11 +3,11 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
 
   // pie chart post function
   vm.getPieChart = function() {
-    console.log('in Score Controller, getPieChart');
+    console.log('in ScoreController, getPieChart');
     // pie piece lable
     vm.labels = ['Correct', 'Incorrect', 'Not Answered'];
-    // dummy data
-    // vm.data = [300, 500, 100];
+    // numbers for pie chart 
+    vm.pieData = [];
     // legend
     vm.options = {
     legend: {
@@ -17,12 +17,6 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
             "rgba(224, 108, 112, 1)",
             "rgba(224, 108, 112, 1)"]
     }; // end vm.options
-  };  // end getPieChart
-
-  // get score function
-  vm.pieData = [];
-
-  vm.getScore = function() {
     for (var i = 0; i < pieData.length; i++) {
       if (pieData[0] === 'ou'
       && pieData[1] === 'oy'
@@ -34,9 +28,12 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
       && pieData[7] === 'ow'
       && pieData[8] === 'ai') {
       vm.label === 'Correct';
+    } else if (pieData[i] === '') {
+      vm.label === 'Not Answered';
     } else (vm.label === 'Incorrect');
-
     } // end for loop
+  };  // end getPieChart
+
 
     // Use getElementById ?
 
@@ -64,7 +61,5 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
     // If not, need to change conditional statements above
 
     // Push into array or Correct, Incorrect, Not Answered -> labels array ?
-
-  }; // end getScore function
 
 }); // end controller
