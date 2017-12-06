@@ -14,8 +14,16 @@ myApp.service('LearnService', function($http) {
     });
   }; // end yourAnswersEntry function
 
-
-
+  // GET for getPieChart in scoreController
+  sv.getPieChart = function() {
+    return $http({
+      method: 'GET',
+      url: '/yourAnswers'
+    }).then(function(response){
+    sv.pieData = response.data;
+    console.log(sv.pieData);
+    });
+  }; // end getPieChart
 
 
   }); // end service
