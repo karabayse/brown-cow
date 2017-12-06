@@ -22,84 +22,79 @@
   <div class="container">
 
     <br>
-    <div class="learnButtons">
-      <button type="button" class="btn btn-success" name="button">LEARN</button>
-      <a class="btn btn-info" href="/score">GET SCORE</a>
-      <button type="button" class="btn btn-danger" ng-click="lc.yourAnswersEntry()">SUBMIT</button>
-    </div>
-    <!-- **** END LEARN BUTTONS **** -->
 
     <div class="dipthongExercises">
-<table class="learnTable">
-  <thead>
-    <tr>
-      <th></th>
-      <th scope="col" colspan="2">1</th>
-      <th scope="col" colspan="2">2</th>
-      <th scope="col" colspan="2">3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><img src="../styles/images/house2.png" height="30px"/></th>
-      <td colspan="2">h</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">se</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/boy.png" height="35px"/></th>
-      <td colspan="2">b</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2"></td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/cow-table.png" height="30px"/></th>
-      <td colspan="2">c</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2"></td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/coin.png" height="30px"/></th>
-      <td colspan="2">c</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">n</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/clouds.png" height="27px"/></th>
-      <td colspan="2">cl</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">d</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/mouse.png" height="35px"/></th>
-      <td colspan="2">m</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">se</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/clown-face.png" height="35px"/></th>
-      <td colspan="2">cl</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">n</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/owl.png" height="35px"/></th>
-      <td colspan="2"></td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">l</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../styles/images/train.png" height="30px"/></th>
-      <td colspan="2">tr</td>
-      <td colspan="2">_ _</td>
-      <td colspan="2">n</td>
-    </tr>
+      <table class="learnTable">
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col" colspan="2">1</th>
+            <th scope="col" colspan="2">2</th>
+            <th scope="col" colspan="2">3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="../styles/images/house2.png" height="30px"/></th>
+            <td colspan="2">h</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">se</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/boy.png" height="35px"/></th>
+            <td colspan="2">b</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/cow-table.png" height="30px"/></th>
+            <td colspan="2">c</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/coin.png" height="30px"/></th>
+            <td colspan="2">c</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">n</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/clouds.png" height="27px"/></th>
+            <td colspan="2">cl</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">d</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/mouse.png" height="35px"/></th>
+            <td colspan="2">m</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">se</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/clown-face.png" height="35px"/></th>
+            <td colspan="2">cl</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">n</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/owl.png" height="35px"/></th>
+            <td colspan="2"></td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">l</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="../styles/images/train.png" height="30px"/></th>
+            <td colspan="2">tr</td>
+            <td colspan="2">_ _</td>
+            <td colspan="2">n</td>
+          </tr>
 
   </div>
   <!-- **** END DIPTHONG EXERCISES ****  -->
 
   <div class="yourAnswers">
   <form class="form-group" action="index.html" method="post">
+    <fieldset>
     <input type="text" name="" value="" placeholder="row 1" ng-model="lc.firstInput">
     <input type="text" name="" value="" placeholder="row 2" ng-model="lc.secondInput">
     <input type="text" name="" value="" placeholder="row 3" ng-model="lc.thirdInput">
@@ -109,8 +104,17 @@
     <input type="text" name="" value="" placeholder="row 7" ng-model="lc.seventhInput">
     <input type="text" name="" value="" placeholder="row 8" ng-model="lc.eigthInput">
     <input type="text" name="" value="" placeholder="row 9" ng-model="lc.ninthInput">
+    </fieldset>
   </form>
+  <br>
+  <div class="learnButtons">
+    <button type="button" class="btn btn-success" name="button">LEARN</button>
+    <a class="btn btn-info" href="/score">GET SCORE</a>
+    <button type="button" class="btn btn-danger" ng-click="lc.yourAnswersEntry()">SUBMIT</button>
   </div>
+  <!-- **** END LEARN BUTTONS **** -->
+</div>
+<!-- **** END YOUR ANSWERS **** -->
 
   </div>
   <!-- **** END CONTAINER CLASS **** -->
