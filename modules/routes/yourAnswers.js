@@ -18,7 +18,7 @@ var yourAnswersSchema = new mongoose.Schema({
 var yourAnswersModel = mongoose.model('yourAnswersModel', yourAnswersSchema);
 
 router.post('/', function(req, res) {
-  console.log('yourAnswers url hit', req.body);
+  console.log('yourAnswers url POST hit for learn', req.body);
   var newAnswers = req.body;
   console.log('req.body:', req.body);
   yourAnswersModel(newAnswers).save().then(function() {
@@ -27,6 +27,7 @@ router.post('/', function(req, res) {
     console.log('error', err);
   });
 }); // end router.post for yourAnswersEntry
+
 
 
 module.exports = router;

@@ -13,8 +13,13 @@ router.get('/*', function(req, res) {
 }); // end router.get for index.html
 
 router.get('/learn', function(req, res) {
-  console.log('learn url hit');
+  console.log('learn url hit in index.js');
   res.sendFile(path.resolve('views/learn.html'));
-}); // end router.get for rooms.html
+}); // end router.get for learn.html
+
+router.get('/score', function(req, res) {
+  console.log('score url hit in index.js');
+  res.sendFile(path.resolve('views/score.html'));
+}); // end router.get for score.html
 
 module.exports = router;

@@ -7,7 +7,7 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
     // pie piece lable
     vm.labels = ['Correct', 'Incorrect', 'Not Answered'];
     // numbers for pie chart
-    vm.pieData = [];
+    // vm.pieData = [];
     // legend
     vm.options = {
     legend: {
@@ -17,21 +17,10 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
             "rgba(224, 108, 112, 1)",
             "rgba(224, 108, 112, 1)"]
     }; // end vm.options
-    for (var i = 0; i < response.data.length; i++) {
-      if (response.data[0] === 'ou'
-      && response.data[1] === 'oy'
-      && response.data[2] === 'ow'
-      && response.data[3] === 'oi'
-      && response.data[4] === 'ou'
-      && response.data[5] === 'ou'
-      && response.data[6] === 'ow'
-      && response.data[7] === 'ow'
-      && response.data[8] === 'ai') {
-      vm.label === 'Correct';
-    } else if (response.data[i] === '') {
-      vm.label === 'Not Answered';
-    } else (vm.label === 'Incorrect');
-    } // end for loop
+    LearnService.yourAnswersEntry().then(function() {
+      vm.pieData = LearnService.data;
+      console.log('back in ScoreController with:', vm.pieData);
+    }); // end LearnService.yourAnswersEntry
   };  // end getPieChart
 
 
