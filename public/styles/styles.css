@@ -92,6 +92,10 @@
   text-align: center;
 }
 
+.col-sm-4 {
+  border-color: Red;
+}
+
 .learnButtons {
   width: 500px;
   margin-left: auto;

@@ -16,6 +16,7 @@ myApp.service('LearnService', function($http) {
 
   // GET for getPieChart in scoreController
   sv.getPieChart = function() {
+    console.log('in getPieChart in learnService.js');
     return $http({
       method: 'GET',
       url: '/yourAnswers'
@@ -31,12 +32,13 @@ myApp.service('LearnService', function($http) {
         && scoreInfo[7] === 'ow'
         && scoreInfo[8] === 'ai') {
         vm.label === 'Correct';
+        console.log(vm.label);
       } else if (scoreInfo[i] === '') {
         vm.label === 'Not Answered';
       } else (vm.label === 'Incorrect');
       } // end for loop
-    sv.scoreInfo = response.data;
-    console.log(sv.scoreInfo);
+    sv.scoreInfo = response.data.entry1;
+    console.log('sv.scoreInfo:', sv.scoreInfo);
     });
   }; // end getPieChart
 
