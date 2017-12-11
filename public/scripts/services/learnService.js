@@ -21,22 +21,20 @@ myApp.service('LearnService', function($http) {
       method: 'GET',
       url: '/yourAnswers'
     }).then(function(response){
-      for (var i = 0; i < scoreInfo.length; i++) {
-        if (scoreInfo[0] === 'ou'
-        && scoreInfo[1] === 'oy'
-        && scoreInfo[2] === 'ow'
-        && scoreInfo[3] === 'oi'
-        && scoreInfo[4] === 'ou'
-        && scoreInfo[5] === 'ou'
-        && scoreInfo[6] === 'ow'
-        && scoreInfo[7] === 'ow'
-        && scoreInfo[8] === 'ai') {
-        vm.label === 'Correct';
-        console.log(vm.label);
-      } else if (scoreInfo[i] === '') {
-        vm.label === 'Not Answered';
-      } else (vm.label === 'Incorrect');
-      } // end for loop
+      response.entry1 === 'ou';
+      response.entry2 === 'oy';
+      response.entry3 === 'ow';
+      response.entry4 === 'oi';
+      response.entry5 === 'ou';
+      response.entry6 === 'ou';
+      response.entry7 === 'ow';
+      response.entry8 === 'ow';
+      response.entry9 === 'ai';
+      if (true) {
+        
+      }
+
+
     sv.scoreInfo = response.data.entry1;
     console.log('sv.scoreInfo:', sv.scoreInfo);
     });

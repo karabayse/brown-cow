@@ -21,6 +21,6 @@ learning game for children.
 
 ![How Now Brown Cow Learn View](brown-cow-learn.png)
 
-### Answers view
+### Answers View
 
 ![How Now Brown Cow Answers View](brown-cow-answers.png)
