@@ -17,9 +17,9 @@ learning game for children.
 * Bootstrap
 * Sweetalert
 
-### Learn View
+<!-- ### Learn View
 
-![How Now Brown Cow Learn View](brown-cow-learn.png)
+![How Now Brown Cow Learn View](brown-cow-learn.png) -->
 
 ### Answers View
 

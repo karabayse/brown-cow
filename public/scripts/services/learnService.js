@@ -21,18 +21,18 @@ myApp.service('LearnService', function($http) {
       method: 'GET',
       url: '/yourAnswers'
     }).then(function(response){
-      response.entry1 === 'ou';
-      response.entry2 === 'oy';
-      response.entry3 === 'ow';
-      response.entry4 === 'oi';
-      response.entry5 === 'ou';
-      response.entry6 === 'ou';
-      response.entry7 === 'ow';
-      response.entry8 === 'ow';
-      response.entry9 === 'ai';
-      if (true) {
-        
-      }
+
+      if (response.entry1 === 'ou' ||
+      response.entry2 === 'oy' ||
+      response.entry3 === 'ow' ||
+      response.entry4 === 'oi' ||
+      response.entry5 === 'ou' ||
+      response.entry6 === 'ou' ||
+      response.entry7 === 'ow' ||
+      response.entry8 === 'ow' ||
+      response.entry9 === 'ai') {
+        sv.labels.push['Correct'];
+      } else (sv.labels.push['Incorrect']);
 
 
     sv.scoreInfo = response.data.entry1;

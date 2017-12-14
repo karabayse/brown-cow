@@ -5,7 +5,8 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
   vm.getPieChart = function() {
     console.log('in ScoreController, getPieChart');
     // pie piece lable
-    vm.labels = ['Correct', 'Incorrect', 'Not Answered'];
+    // vm.labels = ['Correct', 'Incorrect', 'Not Answered'];
+    vm.labels = [];
     // numbers for pie chart
     // vm.pieData = [];
     // legend
@@ -18,7 +19,7 @@ myApp.controller('ScoreController', function(ScoreService, LearnService, $http, 
             "rgba(224, 108, 112, 1)"]
     }; // end vm.options
     LearnService.yourAnswersEntry().then(function() {
-      vm.pieData = LearnService.data;
+      vm.pieData = LearnService.scoreInfo;
       console.log('back in ScoreController with:', vm.pieData);
     }); // end LearnService.yourAnswersEntry
   };  // end getPieChart
